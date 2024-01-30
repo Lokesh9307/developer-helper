@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #ff24ff;
+                                fill-rule: evenodd;
+                            }
+
+                        </style>
+                    </defs>
+                    <path id="Category_Icon" data-name="Category Icon" class="cls-1" d="M128,1205h34v34H128v-34Zm7,27,7-10h1l7,10H135Zm16.5-20a4.5,4.5,0,1,1-4.5,4.5A4.5,4.5,0,0,1,151.5,1212Z" transform="translate(-128 -1205)"/>
+                </svg>
