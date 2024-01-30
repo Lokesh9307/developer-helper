@@ -1,7 +1,7 @@
 import React, { Suspense,lazy } from 'react'
 const Loader = lazy(()=>import('../pages/Loader')) ;
 const Card = lazy(()=>import ('../pages/Card')) ;
-import 'D:\\web related all\\projects All\\Developer-Helper\\my-app\\src\\app\\App.css'
+import '../App.css'
 
 
 const HostingItems = [

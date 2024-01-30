@@ -2,7 +2,6 @@ import React, { Suspense,lazy } from 'react'
 const Loader = lazy(()=>import('../pages/Loader')) ;
 const Card = lazy(()=>import ('../pages/Card')) ;
 import '../App.css'
-import 'D:\\web related all\\projects All\\Developer-Helper\\my-app\\src\\app\\App.css'
 
 const ImagesItem = [
   { icon: '/assets/images/pexels.svg', name: 'Pexels', desc: 'Pexels is a popular online platform offering a vast collection of high-quality, royalty-free images and videos.', link: 'https://www.pexels.com/' },

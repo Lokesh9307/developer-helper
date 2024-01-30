@@ -2,7 +2,7 @@ import React, { Suspense } from 'react'
 import Loader from '../pages/Loader'
 import VsCard from '../pages/VsCard'
 import Link from 'next/link'
-import 'D:\\web related all\\projects All\\Developer-Helper\\my-app\\src\\app\\App.css'
+import '../App.css'
 
 
 const vsCodeItems = [
