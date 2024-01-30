@@ -2,7 +2,7 @@ import React, { Suspense,lazy } from 'react'
 const AiNavPage = lazy(()=>import('@/app/pages/AiNavItems'))
 const Card = lazy(()=>import ('@/app/pages/Card')) ;
 const Loader = lazy(()=>import('@/app/pages/Loader')) ;
-import 'D:\\web related all\\projects All\\Developer-Helper\\my-app\\src\\app\\App.css'
+import '../../App.css'
 
 
 const SeoItems = [
