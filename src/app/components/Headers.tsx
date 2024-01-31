@@ -6,7 +6,7 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const Headers = () => {
   return (
-    <div className='w-full h-auto bg-primarybg p-2 mb-6 sticky top-0 z-10'>
+    <div className='w-full h-auto bg-primarybg p-2 mb-6 sticky top-0 z-50'>
       <div className='w-full flex items-center justify-between text-black'>
         <Link href='/'>
           <Image src='/assets/logo.png' alt='logo' width={150} height={25} className='object-cover overflow-hidden' />
