@@ -17,21 +17,24 @@ const AiNavItems = [
 
 function AiNavPage() {
 
-    const [activeIndex, setActiveIndex] = useState<number | null>(null); // Define activeIndex state
+    const [active,setActive] = useState(false)
 
-    // Function to handle click on navigation item
-    const handleItemClick = (index: number) => {
-        setActiveIndex(index === activeIndex ? null : index); // Toggle activeIndex
-    };
+    const handleClick =()=>{
+        setActive(!active)
+    }
+
+    
     return (
             <div className='w-full h-20 flex gap-3 text-textColor mt-10 justify-around duration-300 border-l-4 border-r-4 border-mainBorder/75 rounded-lg bg-secondarybg'>
             {
                 AiNavItems.map((items,index) => (
                     <Link href={items.url} key={index}
-                        onClick={()=>handleItemClick}
-                        className={`flex gap-3 items-center lg:flex-row flex-col text-center p-2 lg:w-auto w-[60px] hover:border-b-2 hover:border-mainBorder duration-100 active:border-b-2 active:border-mainBorder
-                        ${index !== activeIndex ? 'text-textColor' : 'border-b-2 border-mainBorder'}
+                        className={`flex gap-3 items-center lg:flex-row flex-col text-center p-2 lg:w-auto w-[60px] duration-100
+                        ${active?'text-mainColor border-b-2 border-mainBorder':'text-textColor'}
+                        hover:text-mainColor active:border-b-2 active:border-mainBorder focus:border-b-2 focus:border-mainBorder
+                          
                         `}
+                        onClick={()=>handleClick}
                     >
                         <span className='lg:text-xl text-sm'>{items.icon}</span>
                         <span className='lg:text-xl text-[10px]'>{items.name}</span>
