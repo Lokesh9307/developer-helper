@@ -42,7 +42,7 @@ const Card: React.FC<Props> = ({ icon, name, desc, link }: Props) => {
 
 
   return (
-    <div className='lg:w-[350px] lg:h-[200px] md:w-[260px] md:h-[220px] w-auto h-auto bg-secondarybg flex flex-col gap-2 border-2 border-mainBorder rounded-xl p-3 text-textColor lg:mx-5 mt-10 justify-between relative'>
+    <div className='lg:w-[350px] lg:h-[200px] md:w-[260px] md:h-[220px] sm:w-[300px] h-auto w-[300px] bg-secondarybg flex flex-col gap-2 border-2 border-mainBorder rounded-xl p-3 text-textColor lg:mx-5 mt-10 justify-between relative'>
       <div className='absolute p-2 top-0 right-0 text-textColor cursor-pointer hover:scale-110'>
         <FaBookmark onClick={handleBookmarkClick} />
       </div>
