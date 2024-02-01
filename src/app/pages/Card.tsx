@@ -42,7 +42,7 @@ const Card: React.FC<Props> = ({ icon, name, desc, link }: Props) => {
 
 
   return (
-    <div className='lg:w-[350px] lg:h-[200px] md:w-[260px] md:h-[220px] sm:w-[300px] h-auto w-[300px] bg-secondarybg flex flex-col gap-2 border-2 border-mainBorder rounded-xl p-3 text-textColor lg:mx-5 mt-10 justify-between relative'>
+    <div className='lg:w-[350px] lg:h-[200px] md:w-[320px] md:h-[220px] sm:w-[300px] h-[220px] w-[300px] bg-secondarybg flex flex-col gap-2 border-2 border-mainBorder rounded-xl p-3 text-textColor lg:mx-5 mt-10 justify-between relative'>
       <div className='absolute p-2 top-0 right-0 text-textColor cursor-pointer hover:scale-110'>
         <FaBookmark onClick={handleBookmarkClick} />
       </div>
@@ -51,7 +51,7 @@ const Card: React.FC<Props> = ({ icon, name, desc, link }: Props) => {
       )}
       <div className='flex gap-4 items-center text-textColor'>
         <Image src={icon} alt={name} width={50} height={50} className='bg-slate-300 rounded-lg p-1' />
-        <span className='lg:text-xl text-lg'>{name}</span>
+        <span className='lg:text-xl text-lg lg:w-auto w-[150px]'>{name}</span>
       </div>
       <div className='text-[10px]'>
         {desc}

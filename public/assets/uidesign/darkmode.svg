@@ -1,0 +1,15 @@
+<svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Logo</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-80.000000, -41.000000)">
+            <g id="Nav" transform="translate(80.000000, 40.000000)">
+                <g id="Logo">
+                    <g transform="translate(0.000000, 1.000000)">
+                        <rect id="//-Guide" x="0" y="0" width="16.7142857" height="18"></rect>
+                        <path d="M7.11100933,9.94441293 C9.20986824,12.9501217 13.1143712,13.9980429 16.6339286,12.7841959 C14.9138985,16.0992371 11.1943027,18.0661295 7.32941846,17.3827756 C2.55914306,16.5393386 -0.626059517,11.9779105 0.215068561,7.19454263 C0.896552074,3.31904916 4.01194296,0.486895689 7.7069995,0 C5.36554457,2.90114423 5.01213793,6.93868633 7.11100933,9.94441293 Z" id="Path" fill="#FAE8DA"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
