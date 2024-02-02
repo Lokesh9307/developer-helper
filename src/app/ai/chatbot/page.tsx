@@ -50,6 +50,7 @@ function Chatbot() {
         <section className=' flex flex-wrap lg:gap-5 gap-1 lg:p-3 bg-secondarybg  w-full mx-auto px-5 lg:gap-y-3 gap-y-4 relative lg:justify-normal justify-around overflow-y-scroll scroll-none h-screen scroll-none' >
           <AiNavPage />
           <hr className='bg-primarybg h-2 w-full border-black' />
+          <h1 className='text-white/70 text-center w-full lg:text-3xl text-xl mb-[-10px]'>ChatBot Integration</h1>
           {
             ChatbotItems.map((value, key) => (
               <Card key={key} icon={value.icon} name={value.name} desc={value.desc} link={value.link} />
