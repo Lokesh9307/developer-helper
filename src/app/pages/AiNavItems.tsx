@@ -1,5 +1,5 @@
 'use client'
-import React, { useState,Suspense } from 'react'
+import React, { useState,Suspense, useEffect } from 'react'
 import { GiArchiveResearch } from "react-icons/gi";
 import { IoImagesOutline } from "react-icons/io5";
 import { TfiWrite } from "react-icons/tfi";
@@ -17,11 +17,23 @@ const AiNavItems = [
 
 function AiNavPage() {
 
-    const [active,setActive] = useState(false)
+    const [active, setActive] = useState<number | null>(() => {
+        const storedIndex = localStorage.getItem('activeIndex');
+        return storedIndex ? parseInt(storedIndex, 10) : null;
+    });
+    useEffect(() => {
+        if (active !== null) {
+            localStorage.setItem('activeIndex', active.toString());
+        } else {
+            localStorage.removeItem('activeIndex');
+        }
+    }, [active]);
 
-    const handleClick =()=>{
-        setActive(!active)
-    }
+    const handleClick = (index: number) => {
+        setActive(index);
+    };
+
+
 
     
     return (
@@ -30,11 +42,9 @@ function AiNavPage() {
                 AiNavItems.map((items,index) => (
                     <Link href={items.url} key={index}
                         className={`flex gap-3 items-center lg:flex-row flex-col text-center p-2 lg:w-auto w-[60px] duration-100
-                        ${active?'text-mainColor border-b-2 border-mainBorder':'text-textColor'}
-                        hover:text-mainColor active:border-b-2 active:border-mainBorder focus:border-b-2 focus:border-mainBorder
-                          
-                        `}
-                        onClick={()=>handleClick}
+                        ${active==index?'text-mainColor':'text-textColor'}
+                        hover:text-mainColor`}
+                        onClick={()=>handleClick(index)}
                     >
                         <span className='lg:text-xl text-sm'>{items.icon}</span>
                         <span className='lg:text-xl text-[10px]'>{items.name}</span>
