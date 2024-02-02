@@ -29,14 +29,18 @@ const Sidebar = () => {
   ]
 
   const [active, setActive] = useState<number | null>(() => {
-    const storedIndex = localStorage.getItem('activeIndex');
-    return storedIndex ? parseInt(storedIndex, 10) : null;
+    if (typeof window !== 'undefined') {
+      const storedIndex = localStorage.getItem('activelink');
+      return storedIndex ? parseInt(storedIndex, 10) : null;
+    }
+    return null;
   });
+
   useEffect(() => {
     if (active !== null) {
-      localStorage.setItem('activeIndex', active.toString());
+      localStorage.setItem('activelink', active.toString());
     } else {
-      localStorage.removeItem('activeIndex');
+      localStorage.removeItem('activelink');
     }
   }, [active]);
 
