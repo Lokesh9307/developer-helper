@@ -32,10 +32,6 @@ function AiNavPage() {
     const handleClick = (index: number) => {
         setActive(index);
     };
-
-
-
-    
     return (
             <div className='w-full h-20 flex gap-3 text-textColor mt-10 justify-around duration-300 border-l-4 border-r-4 border-mainBorder/75 rounded-lg bg-secondarybg'>
             {

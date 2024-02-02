@@ -48,22 +48,22 @@ const Sidebar = () => {
     setActive(index);
   };
 
-return (
-  <div className={`lg:w-[20%] w-full lg:h-[40rem] h-20 lg:py-6 pl-6 flex lg:flex-col flex-row lg:gap-3 gap-2 bg-secondarybg rounded-2xl text-textColor duration-500 lg:px-1 px-2 overflow-x-scroll lg:justify-start justify-between lg:overflow-y-scroll scroll-none`}>
-    {
-      ItemLists.map((item, index) => (
-        <div className={`flex gap-3 items-center hover:bg-primarybg py-4 rounded-tl-xl rounded-bl-xl`} 
-        onClick={()=>handleClick(index)} >
-          <Link key={index} href={item.url}  className={`hover:text-mainColor flex gap-2 items-center lg:flex-row flex-col lg:w-auto w-[60px] lg:text-start text-center justify-center ${active == index?'text-mainColor':'text-textColor'}`}
-          >
-            <span className='text-mainColor hover:text-mainColor lg:w-auto lg:h-auto  h-5 text-center'>{item.icon}</span>
-            <span className='lg:text-lg text-[0.6rem] lg:w-auto lg:h-auto  h-5'>{item.name}</span>
-          </Link>
-        </div>
-      ))
-    }
-  </div>
-)
+  return (
+    <div className={`lg:w-[20%] w-full lg:h-[40rem] h-20 lg:py-6 pl-6 flex lg:flex-col flex-row lg:gap-3 gap-2 bg-secondarybg rounded-2xl text-textColor duration-500 lg:px-1 px-2 overflow-x-scroll lg:justify-start justify-between lg:overflow-y-scroll scroll-none`}>
+      {
+        ItemLists.map((item, index) => (
+          <div className={`flex gap-3 items-center hover:bg-primarybg py-4 rounded-tl-xl rounded-bl-xl`}
+            onClick={() => handleClick(index)} >
+            <Link key={index} href={item.url} className={`hover:text-mainColor flex gap-2 items-center lg:flex-row flex-col lg:w-auto w-[60px] lg:text-start text-center justify-center ${active == index ? 'text-mainColor' : 'text-textColor'}`}
+            >
+              <span className='text-mainColor hover:text-mainColor lg:w-auto lg:h-auto  h-5 text-center'>{item.icon}</span>
+              <span className='lg:text-lg text-[0.6rem] lg:w-auto lg:h-auto  h-5'>{item.name}</span>
+            </Link>
+          </div>
+        ))
+      }
+    </div>
+  )
 }
 
 export default Sidebar
