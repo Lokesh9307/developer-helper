@@ -6,9 +6,10 @@ import '../App.css'
 const ImagesItem = [
   { icon: '/assets/images/pexels.svg', name: 'Pexels', desc: 'Pexels is a popular online platform offering a vast collection of high-quality, royalty-free images and videos.', link: 'https://www.pexels.com/' },
 
-  { icon: '/assets/images/freepik.svg', name: 'Freepik', desc: 'Freepik is a popular online platform that offers a vast collection of free images and videos, catering to diverse creative needs. With a user-friendly interface and a wide range of high-quality content.', link: 'https://www.pexels.com/' },
+  { icon: '/assets/images/freepik.svg', name: 'Freepik', desc: 'Freepik is a popular online platform that offers a vast collection of free images and videos, catering to diverse creative needs. With a user-friendly interface and a wide range of high-quality content.', link: 'https://www.freepik.com/' },
 
   { icon: '/assets/images/unsplash.svg', name: 'Unsplash', desc: 'Freepik is a popular online platform that offers a vast collection of free images and videos, catering to diverse creative needs. With a user-friendly interface and a wide range of high-quality content.', link: 'https://unsplash.com/' },
+
   { name: "Pixabay", link: "https://www.pixabay.com", desc: 'Pixabay is a user-friendly website offering a vast collection of high-quality, royalty-free images and videos for free, making it a valuable resource for creative projects and content creation.', icon: '/assets/images/pixabay.svg' },
 
 
