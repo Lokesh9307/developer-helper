@@ -1,7 +1,7 @@
-import React, { Suspense,lazy } from 'react'
-const AiNavPage = lazy(()=>import('@/app/pages/AiNavItems'))
-const Card = lazy(()=>import ('@/app/pages/Card')) ;
-const Loader = lazy(()=>import('@/app/pages/Loader')) ;
+import React, { Suspense, lazy } from 'react'
+const AiNavPage = lazy(() => import('@/app/pages/AiNavItems'))
+const Card = lazy(() => import('@/app/pages/Card'));
+const Loader = lazy(() => import('@/app/pages/Loader'));
 import '../../App.css'
 const ChatbotItems = [
   {
@@ -46,16 +46,16 @@ const ChatbotItems = [
 function Chatbot() {
   return (
     <>
-      <Suspense fallback={<Loader/>}>
-      <section className=' flex flex-wrap lg:gap-5 gap-1 lg:p-3 bg-secondarybg  w-full mx-auto px-5 lg:gap-y-3 gap-y-4 relative lg:justify-normal justify-around overflow-y-scroll scroll-none h-screen scroll-none' >
-        <AiNavPage />
-        <hr className='bg-primarybg h-2 w-full border-black' />
-        {
-           ChatbotItems.map((value, key) => (
-            <Card key={key} icon={value.icon} name={value.name} desc={value.desc} link={value.link} />
-          ))
-        }
-      </section>
+      <Suspense fallback={<Loader />}>
+        <section className=' flex flex-wrap lg:gap-5 gap-1 lg:p-3 bg-secondarybg  w-full mx-auto px-5 lg:gap-y-3 gap-y-4 relative lg:justify-normal justify-around overflow-y-scroll scroll-none h-screen scroll-none' >
+          <AiNavPage />
+          <hr className='bg-primarybg h-2 w-full border-black' />
+          {
+            ChatbotItems.map((value, key) => (
+              <Card key={key} icon={value.icon} name={value.name} desc={value.desc} link={value.link} />
+            ))
+          }
+        </section>
       </Suspense>
     </>
   )
