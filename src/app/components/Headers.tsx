@@ -13,7 +13,7 @@ const Headers = () => {
           <Image src='/assets/logo.png' alt='logo' width={150} height={25} className='object-cover overflow-hidden' />
         </Link>
 
-        <div className='px-6 flex justify-between items-center lg:text-2xl text-xl w-[250px] '>
+        <div className='px-6 flex justify-between items-center lg:text-2xl text-xl w-[250px] relative'>
           <div className='bg-white text-black flex items-center rounded-lg lg:p-2 p-1'>
             <Link href='/newlink' className='text-black rounded-full flex justify-center items-center lg:gap-2 gap-1'>
               <IoIosAddCircle className='text-mainColor text-lg'/>
