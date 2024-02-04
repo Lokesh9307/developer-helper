@@ -4,6 +4,7 @@ import './globals.css'
 import Headers from './components/Headers'
 import Footer from './components/Footer'
 import Sidebar from './components/Sidebar'
+import NewLink from './newlink/page'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-primarybg`}>
+      <body className={`${inter.className} bg-primarybg relative`}>
         <Headers/>
         <div className='flex lg:flex-row flex-col gap-5 '> 
         <Sidebar/>      
