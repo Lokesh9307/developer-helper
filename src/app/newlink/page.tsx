@@ -104,7 +104,7 @@ function NewLink() {
                             <div key={card.id} className='bg-primarybg w-[300px] h-[200px] border-2 border-mainBorder rounded-lg text-textColor flex justify-around items-center flex-col '>
                                 <div className='relative flex items-center w-full justify-center'>
                                 <h3 className='text-center'>{card.name.toLocaleUpperCase()}</h3>
-                                <span className='text-2xl text-red-500 absolute right-1 top-[-16px]'>
+                                <span className='text-2xl text-red-500 absolute right-1 top-[-16px] cursor-pointer'>
                                     <IoIosRemoveCircle onClick={() => handleRemoveCard(card.id)}/>
                                     </span>
                                 </div>
