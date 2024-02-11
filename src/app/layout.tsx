@@ -5,6 +5,7 @@ import Headers from './components/Headers'
 import Footer from './components/Footer'
 import Sidebar from './components/Sidebar'
 import NewLink from './newlink/page'
+import { Analytics } from '@vercel/analytics/react'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -26,6 +27,7 @@ export default function RootLayout({
         <div className='flex lg:flex-row flex-col gap-5 '> 
         <Sidebar/>      
         {children}
+        <Analytics/>
         </div>
         <Footer/>
       </body>
