@@ -44,14 +44,16 @@ const VirtualIntershipItems = [
 ]
 let alertTimeout: NodeJS.Timeout | null = null;
 const AlertMessage =()=>{
-    if (alertTimeout === null) {
-        alert("Explore virtual internships! But remember, safety first! Research companies thoroughly, use secure connections, and be cautious with personal info. Your skills and experience matter, but your well-being is top priority.")
-    
-        // Set a timeout to reset the alertTimeout variable after 1 second
-        alertTimeout = setTimeout(() => {
-          alertTimeout = null;
-        }, 1000);
-      }
+    if (typeof window !== 'undefined'){
+        if (alertTimeout === null) {
+            window.alert("Explore virtual internships! But remember, safety first! Research companies thoroughly, use secure connections, and be cautious with personal info. Your skills and experience matter, but your well-being is top priority.")
+        
+            // Set a timeout to reset the alertTimeout variable after 1 second
+            alertTimeout = setTimeout(() => {
+              alertTimeout = null;
+            }, 1000);
+          }
+    }
 }
 function VirtualInternsip() {  
     AlertMessage()
