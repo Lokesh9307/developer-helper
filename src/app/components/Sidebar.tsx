@@ -8,6 +8,8 @@ import { TbWorldWww, TbBrandVscode } from "react-icons/tb";
 import { GiStarFormation } from "react-icons/gi";
 import { GrTemplate } from "react-icons/gr";
 import { CgComponents } from "react-icons/cg";
+import { BsBuildingsFill } from "react-icons/bs";
+
 
 import '../App.css'
 import Link from 'next/link';
@@ -24,6 +26,7 @@ const Sidebar = () => {
     { icon: <GiStarFormation />, name: 'UI Designs', url: '/uidesign' },
     { icon: <CgComponents />, name: 'UI Components', url: '/uicomponents' },
     { icon: <GrTemplate />, name: 'Templates', url: '/freetemplate' },
+    { icon: <BsBuildingsFill />, name: 'Virtual Internships', url: '/virtualinternships' },
     { icon: <IoExtensionPuzzle />, name: 'Chrome Extensions', url: '/chrome' },
     { icon: <TbBrandVscode />, name: 'VS Code Extension', url: '/vscode' },
   ]
