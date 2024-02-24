@@ -2,6 +2,7 @@
 import React, { Suspense, lazy, useEffect, useState } from 'react'
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { IoIosRemoveCircle } from "react-icons/io";
+import { MdAddLink } from "react-icons/md";
 import '../App.css'
 import Link from 'next/link';
 const Loader = lazy(()=>import('../pages/Loader'))  ;
@@ -66,27 +67,27 @@ function NewLink() {
         <Suspense fallback={<Loader/>}>
             <main className='flex flex-col w-full h-auto gap-5 p-4'>
                 <section className='bg-secondarybg w-full h-[22rem] text-textColor flex justify-center items-center flex-col p-2'>
-                    <h1 className='text-2xl text-center'>Create New</h1>
+                    <h1 className='text-2xl text-center flex items-center gap-3'>Create New Link <MdAddLink className='text-3xl text-mainColor'/></h1>
                     <form action="" className='flex flex-col gap-2 border-2 border-mainBorder p-4 rounded-lg' onSubmit={handleSubmit}>
                         <div className='flex gap-5'>
                             <div className='flex gap-2'>
                                 <label htmlFor="name">
                                     Name:
                                 </label>
-                                <input type="text" name="name" placeholder='Enter name' className='input-field' value={formData.name} onChange={handleChange} required/>
+                                <input type="text" name="name" placeholder='Enter name' className='input-field bg-gray-800' value={formData.name} onChange={handleChange} required/>
                             </div>
                             <div className='flex gap-2'>
                                 <label htmlFor="link">
                                     Link:
                                 </label>
-                                <input type="url" name="link" placeholder='Enter link' className='input-field' value={formData.link} onChange={handleChange} required />
+                                <input type="url" name="link" placeholder='Enter link' className='input-field bg-gray-800' value={formData.link} onChange={handleChange} required />
                             </div>
                         </div>
                         <div className='flex flex-col gap-2'>
                             <label htmlFor="name">
                                 Description:
                             </label>
-                            <textarea name="description" id="" cols={20} rows={3} className='resize-none text-black rounded-lg p-1' placeholder='Enter Description' value={formData.description} onChange={handleChange} required></textarea>
+                            <textarea name="description" id="" cols={20} rows={3} className='resize-none text-white rounded-lg p-1 bg-gray-800' placeholder='Enter Description' value={formData.description} onChange={handleChange} required></textarea>
                         </div>
                         <div className='flex justify-center items-center'>
                             <button type="submit" className='bg-mainColor text-black p-2 rounded-lg'>
