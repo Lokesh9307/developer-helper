@@ -36,7 +36,7 @@ export default function Home() {
             </li>
             <li className='w-[300px]  text-textColor/80 border-2 border-white/40 p-2 rounded-lg bg-secondarybg/50 hover:text-textColor duration-300'>
               Now you can create your own link
-            </li><sup className='ml-[-10px] text-red-500 font-bold'>new</sup>
+            </li>
           </ul>
         </div>
         <div className='lg:block hidden overflow-hidden'>
